@@ -24,6 +24,14 @@ ui <- navbarPage(
     "TelcoSight - Customer Churn Intelligence"
   ),
   windowTitle = "TelcoSight | Customer Churn Dashboard",
+
+  # SIMPLE GITHUB ICON
+  tags$head(tags$link(rel = "stylesheet", 
+                      href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")),
+  tags$div(style = "position: absolute; top: 10px; right: 20px; z-index: 1000;",
+           tags$a(href = "https://github.com/inno0527/telcosight", 
+                  target = "_blank",
+                  tags$i(class = "fa fa-github", style = "font-size: 28px; color: #333;"),)),
   
   # Include custom CSS for better styling
   tags$head(
